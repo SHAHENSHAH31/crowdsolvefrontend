@@ -43,10 +43,10 @@ export default function DashboardLayout() {
     dispatch(clearToken());
 
    
-    navigate("/");
+    navigate("/login");
   } catch (err) {
     console.error("Logout failed:", err);
-    navigate("/"); 
+    navigate("/login"); 
   }
 };
 
