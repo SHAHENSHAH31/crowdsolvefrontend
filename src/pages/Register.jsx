@@ -82,10 +82,10 @@ export default function RegisterForm() {
 
       {/* Login Link */}
       <p style={{ textAlign: "center", marginTop: "15px" }}>
-        Already have an account?{" "}
-        <Link to="/" style={{ color: "#2196F3", textDecoration: "none" }}>
-          Login
-        </Link>
+         Already have an account?{" "}
+  <Link to="/login" style={{ color: "#2196F3", textDecoration: "none" }}>
+    Login
+  </Link>
       </p>
     </form>
   );

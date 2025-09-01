@@ -19,7 +19,7 @@ export default function LoginForm() {
       const result = await loginUser(formData).unwrap();
       console.log("Login Success:", result);
       dispatch(setToken(result.accessToken));
-      navigate('/dashboard');
+      navigate('/');
     } catch (err) {
       console.error("Login Failed:", err);
     }
