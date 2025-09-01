@@ -19,7 +19,7 @@ export default function RegisterForm() {
     try {
       const result = await registerUser(formData).unwrap();
       console.log("Register Success:", result);
-      navigate('/')
+      navigate('/login')
     } catch (err) {
       console.error("Register Failed:", err);
     }
