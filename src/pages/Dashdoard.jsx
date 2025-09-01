@@ -138,6 +138,22 @@ export default function DashboardLayout() {
             + Upload Problem
           </button>
           <button
+            onClick={(e)=>(navigate('/login'))}
+            style={{
+              padding: "10px 16px",
+              backgroundColor: "#3649f4ff",
+              color: "#fff",
+              border: "none",
+              borderRadius: "8px",
+              marginRight:'5px',
+              cursor: "pointer",
+              fontWeight: "bold",
+              boxShadow: "0px 2px 5px rgba(0,0,0,0.1)",
+            }}
+          >
+            Logout
+          </button>
+          <button
             onClick={handleLogout}
             style={{
               padding: "10px 16px",
