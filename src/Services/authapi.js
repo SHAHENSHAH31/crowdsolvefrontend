@@ -23,6 +23,7 @@ const baseQueryWithRefresh = async (args, api, extraOptions) => {
       result = await baseQuery(args, api, extraOptions);
     } else {
       api.dispatch(clearToken());
+       window.location.href = "/login";
     }
   }
 
