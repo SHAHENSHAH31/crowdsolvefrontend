@@ -9,6 +9,7 @@ import {
 import { useSelector,useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
+
 export default function DashboardLayout() {
   const navigate = useNavigate();
   const [showForm, setShowForm] = useState(false);
@@ -69,7 +70,7 @@ export default function DashboardLayout() {
       setShowForm(false);
     } catch (err) {
       console.error("Failed to create problem:", err);
-      alert("Error while creating problem.");
+      navigate("/login")
     }
   };
 
@@ -97,7 +98,7 @@ export default function DashboardLayout() {
     setSelectedProblem(null);
   } catch (err) {
     console.error("Failed to submit solution:", err);
-    alert("Error while submitting solution.");
+   navigate('/login')
   }
 };
 
